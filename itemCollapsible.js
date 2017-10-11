@@ -96,7 +96,8 @@ export default class ItemCollapsible extends React.Component {
                             borderColor: borderColor,
                             borderBottomWidth: 2,
                             alignItems: 'center',
-                            opacity: isOpen ? 1 : 0.7
+                            opacity: isOpen ? 1 : 0.7,
+                            height: itemHeight
                         }}>
                             {this._renderLeftIcon()}
                             <Text style={{
