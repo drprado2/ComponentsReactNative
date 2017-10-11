@@ -62,3 +62,7 @@ fontColor    | Cor da fonte do título do item (opcional)
 leftIcon     | Ícone que será apresentado na esquerda, geralmente uma imagem (opcional)
 childrensList | Essa é a propriedade mais importante e também mais complexa, cada item deve ser um objeto literal contendo o componente React que deve ser renderizado e a altura que aquele item deve tem, e no caso de sub itens colapsáveis devemos adicionar uma propriedade a mais toggleCollapsible que é uma função de callback que deve atualizar a altura que esse subitem terá do menu geral. Essa parte não está ideal mais infelizmente com o meu conhecimento atual foi a melhor maneira que consegui para resolver o problema de ter itens colapsáveis dentro de itens colapsáveis.  
 toggleCollapsible | Essa propriedade deve ser usada apenas quando um dos itens filhos do item colapsável pai também é um item colapsável, nesse caso a altura desse item vária em relação ao item estar aberto ou fechado logo deverá ser passado uma função de callback que será evocada quando o items abrir ou fechar, e o componente pai deve atualizar a sua altura total.
+
+### Imagem de exemplo do item em um menu lateral
+![Item colapsável em um menu lateral](https://uploaddeimagens.com.br/images/001/130/760/full/ExemploItemColaps%C3%A1vel.jpg?1507700045)
+
