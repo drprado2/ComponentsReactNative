@@ -41,9 +41,9 @@ export default class ItemCollapsible extends React.Component {
     }
 
     _calculateComponentHeight = () => {
-        const {itemsHeight} = this.props;
+        const {itemHeight} = this.props;
         return (
-            this.state.isOpen ? itemsHeight + this.childrensHeight : itemsHeight
+            this.state.isOpen ? itemHeight + this.childrensHeight : itemHeight
         )
     }
 
@@ -73,7 +73,7 @@ export default class ItemCollapsible extends React.Component {
     }
 
     render() {
-        const {itemsHeight, openIcon, closeIcon, title, backgroundColor, borderColor, fontColor} = this.props;
+        const {itemHeight, openIcon, closeIcon, title, backgroundColor, borderColor, fontColor} = this.props;
         const {isOpen} = this.state;
         const icon = isOpen ? openIcon : closeIcon;
 
@@ -110,7 +110,7 @@ export default class ItemCollapsible extends React.Component {
                             </Text>
                             <Image
                                 source={icon}
-                                style={{width: itemsHeight - 3, height: itemsHeight - 3}}
+                                style={{width: itemHeight - 3, height: itemHeight - 3}}
                             />
                         </View>
                     </TouchableWithoutFeedback>
